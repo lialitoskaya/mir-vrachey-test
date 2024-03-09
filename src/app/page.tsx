@@ -1,20 +1,14 @@
 "use client"
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
-import styles from './page.module.css';
 import { useState } from "react";
 import { Modal1 } from './Modal1.js';
 import { Modal2 } from './Modal2.js';
-
-
-
 
 export default function Home() {
   const [showModal1, setShowModal1] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
 
   const handleClick = (e: any) => {
-    console.log(e.target.id)
     if(e.target.id === "1"){
       setShowModal1(!showModal1);
     };
